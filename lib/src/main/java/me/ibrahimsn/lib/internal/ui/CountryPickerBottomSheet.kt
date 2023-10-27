@@ -77,10 +77,6 @@ class CountryPickerBottomSheet : BottomSheetDialogFragment() {
             adapter = itemAdapter
         }
 
-        imageButtonClose.setOnClickListener {
-            dismiss()
-        }
-
         searchView.setOnQueryTextListener(object: SearchView.OnQueryTextListener {
             override fun onQueryTextSubmit(query: String?): Boolean {
                 return true
